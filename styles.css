@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Ubuntu, 'Segoe Ui';
     color:#2F2F2F;
+    font-size: calc(15px + 0.390625vw);
 }
 
 body {
@@ -11,27 +12,27 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 .block-container{
-    border-radius: 50px;
+    border-radius: 6rem;
     background-color: azure;
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 0 10% 0 10%;
-    padding-bottom: 20vh;
+    align-items: center;
+    margin: 0rem 10rem 0 10rem;
+    padding-bottom: 20rem;
     border-end-end-radius: 0;
     border-bottom-left-radius: 0;
 }
 
 header {
-    padding: 10%;
+    padding: 10rem;
     text-align: center;
 }
 header h1 {
     color: azure;
-    font-size: 128px;
+    font-size: 8rem;
 }
 header h2 {
     color: azure;
@@ -39,20 +40,20 @@ header h2 {
 nav {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 5%;
+    padding-bottom: 5rem;
     flex-wrap: wrap;
 }
 nav a {
     text-decoration: none;
     color: azure;
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: bold;
     border-bottom-style: solid;
     border-bottom-color: #2F2F2F;
     transition: .5s ease;
 }
 nav a:hover{
-    border-bottom-width: 10px;
+    border-bottom-width: 1.5rem;
     border-bottom-color: azure;
 }
 main {
@@ -61,8 +62,8 @@ main {
     align-items: center;
 }
 main h1 {
-    font-size: 64px;
-    padding: 5%;
+    font-size: 4rem;
+    padding: 5rem;
     border-bottom-style: solid;
     border-width: 5px;
 }
@@ -75,36 +76,36 @@ main img {
     display: block;
     border-style: solid;
     border-color:#2F2F2F;
-    border-width: 20px;
-    min-width: 600px;
-    max-width: 600px;
-    max-height: 500px;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    border-width: 1rem;
+    min-width: 30rem;
+    max-width: 30rem;
+    max-height: 30rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
 }
 .overlay {
     position: absolute;
     bottom: 0;
     background: #2F2F2F;
     color: #f1f1f1;
-    padding: 5%;
-    width: 600px;
+    padding: 2rem;
+    width: 30rem;
     transition: .5s ease;
     opacity:1;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
 }
 .item:hover .overlay {
-    width: 300px;
-    padding: 2%;
+    width: 15rem;
+    padding: .5rem;
   }
 
 footer {
     display: flex;
     background-color: #2F2F2F;
     justify-content: space-between;
-    padding: 2%;
+    padding: 2rem;
 }
 footer p {
     color: azure;
