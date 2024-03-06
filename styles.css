@@ -20,7 +20,9 @@ body {
     flex-direction: column;
     align-content: center;
     margin: 0 10% 0 10%;
-    padding-bottom: 100vh;
+    padding-bottom: 20vh;
+    border-end-end-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 header {
@@ -32,5 +34,78 @@ header h1 {
     font-size: 128px;
 }
 header h2 {
+    color: azure;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: azure;
+    font-size: 48px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-color: #2F2F2F;
+    transition: .5s ease;
+}
+nav a:hover{
+    border-bottom-width: 10px;
+    border-bottom-color: azure;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1 {
+    font-size: 64px;
+    padding: 5%;
+    border-bottom-style: solid;
+    border-width: 5px;
+}
+.item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+main img {
+    display: block;
+    border-style: solid;
+    border-color:#2F2F2F;
+    border-width: 20px;
+    min-width: 600px;
+    max-width: 600px;
+    max-height: 500px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: #2F2F2F;
+    color: #f1f1f1;
+    padding: 5%;
+    width: 600px;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.item:hover .overlay {
+    width: 300px;
+    padding: 2%;
+  }
+
+footer {
+    display: flex;
+    background-color: #2F2F2F;
+    justify-content: space-between;
+    padding: 2%;
+}
+footer p {
     color: azure;
 }
