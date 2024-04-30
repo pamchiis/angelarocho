@@ -5,37 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <title>Pamchdev Portfolio</title>
+    <script src="https://kit.fontawesome.com/aa5063d94b.js" crossorigin="anonymous"></script>
+    <script>
+        
+        function openView(evt, tabName) {
+          // Declare all variables
+          var i, tabContent, tabLinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabContent = document.getElementsByClassName("tabContent");
+          for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+          }
+      
+          // Get all elements with class="tablinks" and remove the class "active"
+          tabLinks = document.getElementsByClassName("tabLinks");
+          for (i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+          }
+      
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+          //Set first tab open by default
+          
+        }
+        
+        
+    </script>
 </head>
 <body>
+    <nav>
+        <a href="https://pamchdev.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://github.com/pamchiis" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:agarocho@gmail.com" target="_blank"><i class="fa-solid fa-message"></i></a>
+    </nav>
     <header>
         <h1>Pamch<span style="font-size: 8rem; color: #498467">Dev</span></h1>
-        <h2>web developer, programmer, game developer</h2>
+        <h2>silly programmer of things</h2>
     </header>
-    <nav>
-        <a href="https://pamchdev.itch.io/" target="_blank">Itch.io</a>
-        <a href="https://github.com/pamchiis" target="_blank">GitHub</a>
-        <a href="mailto:agarocho@gmail.com" target="_blank">Gmail</a>
-    </nav>
+    <div class="tab">
+        <button class="tabLinks" onclick="openView(event, 'WebDev')" id="firstView">Web Dev</button>
+        <button class="tabLinks" onclick="openView(event, 'GameDev')">Game Dev</button>
+    </div>
+    
     <div class="block-container">
         <main>
-            <h1>Web Dev Projects</h1>
-            <div class="item">
-                <a href="https://pamchiis.github.io/chalkspider_artstore/" target="_blank"><img src="assets/web1.png"></a>
-                <div class="overlay">Chalkspider Gallery</div>
+            <div id="WebDev" class="tabContent">
+                <h1>Web Development</h1>
+                <div class="item">
+                    <a href="https://pamchiis.github.io/chalkspider_artstore/" target="_blank"><img src="assets/web1.png"></a>
+                    <div class="overlay">Chalkspider Gallery</div>
+                </div>
+                <div class="item">
+                    <a href="https://pamchiis.github.io/cutestcats_site/" target="_blank"><img src="assets/web2.png"></a>
+                    <div class="overlay">Cutest Cats</div>
+                </div>
             </div>
-            <div class="item">
-                <a href="https://pamchiis.github.io/cutestcats_site/" target="_blank"><img src="assets/web2.png"></a>
-                <div class="overlay">Cutest Cats</div>
-            </div>
-    
-            <h1>Game Dev Projects</h1>
-            <div class="item">
-                <a href="https://pamchdev.itch.io/hamquest" target="_blank"><img src="assets/game1.png"></a>
-                <div class="overlay">HamQuest Capstone Project</div>
-            </div>
-            <div class="item">
-                <a href="https://pamchdev.itch.io/billycreek" target="_blank"><img src="assets/game2.png"></a>
-                <div class="overlay">BillyCreek Gamejam Entry</div>
+            <div id="GameDev" class="tabContent">
+                <h1>Game Development</h1>
+                <div class="item">
+                    <a href="https://pamchdev.itch.io/hamquest" target="_blank"><img src="assets/game1.png"></a>
+                    <div class="overlay">HamQuest Capstone Project</div>
+                </div>
+                <div class="item">
+                    <a href="https://pamchdev.itch.io/billycreek" target="_blank"><img src="assets/game2.png"></a>
+                    <div class="overlay">BillyCreek Gamejam Entry</div>
+                </div>
             </div>
         </main>
         
@@ -45,5 +81,8 @@
         <p>Code available on my GitHub &lt;3 </p>
         <p>Background pattern created using Pattern Monster.</p>
     </footer>
+    <script>
+        document.getElementById("firstView").click();
+    </script>
 </body>
 </html>
