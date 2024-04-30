@@ -68,6 +68,10 @@ header h1 {
     color: azure;
     font-size: 8rem;
 }
+header h1 span {
+    font-size: 8rem;
+    color: #498467;
+}
 header h2 {
     color: azure;
 }
@@ -169,7 +173,13 @@ footer p {
     header h1 {
         font-size: 4rem;
     }
+    header h1 span {
+        font-size: 4rem;
+    }
     nav a {
         font-size: 1rem;
+    }
+    nav i {
+        font-size: 1.5rem;
     }
 }
