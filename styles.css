@@ -159,8 +159,11 @@ main h1 {
     background-color: azure;
     padding-left: 3rem;
     padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     width: 29rem;
     height: 8rem;
+    overflow: scroll;
 }
 .imgItem:hover {
     border-color:#498467;
@@ -185,12 +188,12 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    main img {
+    .imgItem {
         width: 20rem;
     }
     .overlay {
-        width: 21rem;
-        height: 10rem;
+        width: 18rem;
+        height: 18rem;
         border-top-right-radius: 0;
         border-bottom-left-radius: 20px;
         display: flex;
@@ -198,9 +201,16 @@ footer p {
         align-items: center;
     }
     .overlay-box {
-        width: 19rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 17rem;
+        height: 17rem;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
+    }
+    .overlay-box h2 {
+        padding: 1rem;
+        font-size: 1.2rem;
     }
     header {
         padding: 2rem;
